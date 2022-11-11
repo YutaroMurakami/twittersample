@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		5F505C39291691E30059EC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C38291691E30059EC02 /* AppDelegate.swift */; };
 		5F505C3B291691E30059EC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C3A291691E30059EC02 /* SceneDelegate.swift */; };
-		5F505C3D291691E30059EC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C3C291691E30059EC02 /* ViewController.swift */; };
 		5F505C40291691E30059EC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F505C3E291691E30059EC02 /* Main.storyboard */; };
 		5F505C42291691E40059EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F505C41291691E40059EC02 /* Assets.xcassets */; };
 		5F505C45291691E40059EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F505C43291691E40059EC02 /* LaunchScreen.storyboard */; };
 		5F505C50291691E40059EC02 /* TwitteeSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C4F291691E40059EC02 /* TwitteeSampleAppTests.swift */; };
 		5F505C5A291691E40059EC02 /* TwitteeSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C59291691E40059EC02 /* TwitteeSampleAppUITests.swift */; };
 		5F505C5C291691E40059EC02 /* TwitteeSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C5B291691E40059EC02 /* TwitteeSampleAppUITestsLaunchTests.swift */; };
+		5F505C692916957A0059EC02 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C682916957A0059EC02 /* TimelineViewController.swift */; };
+		5F505C6B2916ADEB0059EC02 /* TimelineDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C6A2916ADEB0059EC02 /* TimelineDataModel.swift */; };
+		5F505C6E291787590059EC02 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F505C6C291787590059EC02 /* TimelineTableViewCell.swift */; };
+		5F505C6F291787590059EC02 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F505C6D291787590059EC02 /* TimelineTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		5F505C35291691E30059EC02 /* TwitteeSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitteeSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F505C38291691E30059EC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F505C3A291691E30059EC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F505C3C291691E30059EC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F505C3F291691E30059EC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F505C41291691E40059EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F505C44291691E40059EC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		5F505C55291691E40059EC02 /* TwitteeSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitteeSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F505C59291691E40059EC02 /* TwitteeSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitteeSampleAppUITests.swift; sourceTree = "<group>"; };
 		5F505C5B291691E40059EC02 /* TwitteeSampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitteeSampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F505C682916957A0059EC02 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		5F505C6A2916ADEB0059EC02 /* TimelineDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDataModel.swift; sourceTree = "<group>"; };
+		5F505C6C291787590059EC02 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		5F505C6D291787590059EC02 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		5F505C37291691E30059EC02 /* TwitteeSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				5F505C682916957A0059EC02 /* TimelineViewController.swift */,
 				5F505C38291691E30059EC02 /* AppDelegate.swift */,
 				5F505C3A291691E30059EC02 /* SceneDelegate.swift */,
-				5F505C3C291691E30059EC02 /* ViewController.swift */,
 				5F505C3E291691E30059EC02 /* Main.storyboard */,
 				5F505C41291691E40059EC02 /* Assets.xcassets */,
 				5F505C43291691E40059EC02 /* LaunchScreen.storyboard */,
 				5F505C46291691E40059EC02 /* Info.plist */,
+				5F505C6A2916ADEB0059EC02 /* TimelineDataModel.swift */,
+				5F505C6C291787590059EC02 /* TimelineTableViewCell.swift */,
+				5F505C6D291787590059EC02 /* TimelineTableViewCell.xib */,
 			);
 			path = TwitteeSampleApp;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F505C6F291787590059EC02 /* TimelineTableViewCell.xib in Resources */,
 				5F505C45291691E40059EC02 /* LaunchScreen.storyboard in Resources */,
 				5F505C42291691E40059EC02 /* Assets.xcassets in Resources */,
 				5F505C40291691E30059EC02 /* Main.storyboard in Resources */,
@@ -258,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F505C3D291691E30059EC02 /* ViewController.swift in Sources */,
+				5F505C6B2916ADEB0059EC02 /* TimelineDataModel.swift in Sources */,
+				5F505C692916957A0059EC02 /* TimelineViewController.swift in Sources */,
+				5F505C6E291787590059EC02 /* TimelineTableViewCell.swift in Sources */,
 				5F505C39291691E30059EC02 /* AppDelegate.swift in Sources */,
 				5F505C3B291691E30059EC02 /* SceneDelegate.swift in Sources */,
 			);
